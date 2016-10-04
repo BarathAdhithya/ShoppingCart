@@ -51,7 +51,7 @@ public class CategoryController {
 		  return "redirect:/Category";
 		  
 		 }
-		 @RequestMapping(value="/ItemBy category/{id}")
+		 @RequestMapping(value="/ItemBycategory/{id}")
 		 public String editItem(@PathVariable("id") int id,RedirectAttributes redirectAttributes)
 		 {
 		  redirectAttributes.addFlashAttribute("category", this.categoryDAO.get(id));

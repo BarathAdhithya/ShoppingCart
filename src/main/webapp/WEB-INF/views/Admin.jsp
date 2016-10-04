@@ -43,7 +43,7 @@
  top:150px;
 margin-left:410px;
 width:20%;
-height:68%;
+height:65%;
 }
   
   
@@ -61,7 +61,7 @@ height:68%;
       <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="margin-left:-20px;"><img class="image-rounded" src="http://www.avalisa.com/images/detailed/7/avalisa-canvas-wall-art-navy-dog-face.jpg" width=25px height=25px></span></a>
     </div>
     <ul class="nav navbar-nav nav-tabs" style="margin-left:320px;">
-      <li><a href="http://localhost:8080/ShoppingCart/"><span style="font-family:arial;color:indigo;"><b>Home</b></span></a></li>
+      <li class="active"><a class="glyphicon glyphicon-home" href="http://localhost:8080/ShoppingCart/"><span style="font-family:arial;color:indigo;"><b></b></span></a></li>
       <li><a href="Supplier"><span style="font-family:arial;color:indigo;"><b>Supplier</b></span></a></li>
       <li><a href="Product"><span style="font-family:arial;color:indigo;"><b>Product</b></span></a></li> 
       <li><a href="Category"><span style="font-family:arial;color:indigo;"><b>Category</b></span></a></li> 
@@ -178,7 +178,7 @@ height:68%;
          <!--  <img src="http://softtouchvolleyball.com/wp-content/uploads/2013/09/Cool-Designs-Wallpapers-for-Background-HD-Wallpaper-1080x607.jpg"
              style="width:100%;height:500px;"> -->
             <iframe title="YouTube1" class="youtube-player" style="margin:-7px 0px 0px -425px" 
-           width="598.5px" height="100%" src="http://www.youtube.com/embed/watch?v=_JyZ7myKU9I"
+           width="598.5px" height="100%" src="http://www.youtube.com/embed/W-Q7RMpINVo"
              ></iframe>
           </div>  
         </div>
@@ -186,19 +186,19 @@ height:68%;
     </div>
 </div>
 
-<div class="modal fade" id="myModal4">
+ <div class="modal fade" id="myModal4">
 	<div class="modal-dialog">
       <div class="modal-content">
        
-          <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> -->
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         
        
         <div class="modal-body"  >
         <div class=Carosel5 >
-         <!--  <img src="http://softtouchvolleyball.com/wp-content/uploads/2013/09/Cool-Designs-Wallpapers-for-Background-HD-Wallpaper-1080x607.jpg"
+          <!-- <img src="http://softtouchvolleyball.com/wp-content/uploads/2013/09/Cool-Designs-Wallpapers-for-Background-HD-Wallpaper-1080x607.jpg"
              style="width:100%;height:500px;"> -->
             <iframe title="YouTube2" class="youtube-player" style="margin:-7px 0px 0px -425px" 
-           width="598.5px" height="100%" src="http://www.youtube.com/embed/watch?v=Ofge6a3gGis"
+           width="598.5px" height="100%" src="http://www.youtube.com/embed/W-Q7RMpINVo"
              ></iframe>
           </div>  
         </div>
@@ -210,15 +210,15 @@ height:68%;
 	<div class="modal-dialog">
       <div class="modal-content">
        
-          <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> -->
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         
        
         <div class="modal-body"  >
         <div class=Carosel5 >
-         <!--  <img src="http://softtouchvolleyball.com/wp-content/uploads/2013/09/Cool-Designs-Wallpapers-for-Background-HD-Wallpaper-1080x607.jpg"
+          <!-- <img src="http://softtouchvolleyball.com/wp-content/uploads/2013/09/Cool-Designs-Wallpapers-for-Background-HD-Wallpaper-1080x607.jpg"
              style="width:100%;height:500px;"> -->
             <iframe title="YouTube3" class="youtube-player" style="margin:-7px 0px 0px -425px" 
-           width="598.5px" height="100%" src="http://www.youtube.com/embed/watch?v=7GswdimlS0g"
+           width="598.5px" height="100%" src="http://www.youtube.com/embed/W-Q7RMpINVo"
              ></iframe>
           </div>  
         </div>
@@ -230,15 +230,15 @@ height:68%;
 	<div class="modal-dialog">
       <div class="modal-content">
        
-          <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> -->
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         
        
         <div class="modal-body"  >
         <div class=Carosel5 >
-         <!--  <img src="http://softtouchvolleyball.com/wp-content/uploads/2013/09/Cool-Designs-Wallpapers-for-Background-HD-Wallpaper-1080x607.jpg"
+          <!-- <img src="http://softtouchvolleyball.com/wp-content/uploads/2013/09/Cool-Designs-Wallpapers-for-Background-HD-Wallpaper-1080x607.jpg"
              style="width:100%;height:500px;"> -->
             <iframe title="YouTube4" class="youtube-player" style="margin:-7px 0px 0px -425px" 
-           width="598.5px" height="100%" src="http://www.youtube.com/embed/watch?v=QD_L4FLFj2Y"
+           width="598.5px" height="100%" src="http://www.youtube.com/embed/W-Q7RMpINVo"
              ></iframe>
           </div>  
         </div>
@@ -250,21 +250,21 @@ height:68%;
 	<div class="modal-dialog">
       <div class="modal-content">
        
-          <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> -->
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         
        
         <div class="modal-body"  >
         <div class=Carosel5 >
-         <!--  <img src="http://softtouchvolleyball.com/wp-content/uploads/2013/09/Cool-Designs-Wallpapers-for-Background-HD-Wallpaper-1080x607.jpg"
+          <!-- <img src="http://softtouchvolleyball.com/wp-content/uploads/2013/09/Cool-Designs-Wallpapers-for-Background-HD-Wallpaper-1080x607.jpg"
              style="width:100%;height:500px;"> -->
             <iframe title="YouTube5" class="youtube-player" style="margin:-7px 0px 0px -425px" 
-           width="598.5px" height="100%" src="http://www.youtube.com/embed/watch?v=xaibRAJ-Hjo"
+           width="598.5px" height="100%" src="http://www.youtube.com/embed/W-Q7RMpINVo"
              ></iframe>
           </div>  
         </div>
          </div>
     </div>
-</div>
+</div> 
 
 
 </body>

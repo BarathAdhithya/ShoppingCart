@@ -20,21 +20,32 @@
     margin: 5% 0;
     box-shadow: 3px 3px 2px #ccc;
     transition: 0.5s;
+    width:800px;
+    font-size:100%;
     }
-.custab:hover{
+.custab tr:hover{
     box-shadow: 3px 3px 0px transparent;
     transition: 0.5s;
+    background-color:skyblue;
     }
+  div.UpBtn{
+  margin-left:540px;
+  margin-top:10px
+  }  
+  div.AddBtn{
+  margin-left:540px;
+  margin-top:10px;
+  } 
+    
+div.Margin{
+margin-left:0px;
+color:indigo;
+}
     
 div.TableMargin
 {
-margin-left:350px;
-border-color:white;
-border-width:2px;
-border-left-style:solid;
-margin-right:500px;
-border-collapse:separate;
-padding-left:15px;
+margin-left:500px;
+color:indigo;
 }    
  div.FontManip{
   
@@ -43,10 +54,11 @@ padding-left:15px;
   color:red;
   }
   div.Table{
-  margin-left:55px;
+  margin-left:200px;
   margin-top:40px;
   fonr-family:arial;
-  font-size:80%;
+  font-size:100%;
+  color:indigo;
   }
   body{
     background-image:url("https://truthsandillusions.files.wordpress.com/2015/02/the-left-behind.png");
@@ -55,7 +67,7 @@ padding-left:15px;
 
 </style>
 <body>
-<nav class="navbar navbar-deafault">
+<nav class="navbar">
 <div class="FontManip">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -63,57 +75,76 @@ padding-left:15px;
       <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="margin-left:-20px;"><img class="image-rounded" src="http://www.avalisa.com/images/detailed/7/avalisa-canvas-wall-art-navy-dog-face.jpg" width=25px height=25px></span></a>
     </div>
     <ul class="nav navbar-nav nav-tabs" style="margin-left:320px;">
-      <li><a href="http://localhost:8080/ShoppingCart/"><span style="font-family:arial;color:indigo;"><b>Home</b></span></a></li>
+      <li><a class="glyphicon glyphicon-home"href="http://localhost:8080/ShoppingCart/"><span style="font-family:arial;color:indigo;"><b></b></span></a></li>
       <li><a href="Supplier"><span style="font-family:arial;color:indigo;"><b>Supplier</b></span></a></li>
       <li><a href="Product"><span style="font-family:arial;color:indigo;"><b>Product</b></span></a></li> 
-      <li><a href="Category"><span style="font-family:arial;color:indigo;"><b>Category</b></span></a></li> 
+      <li class="active"><a href="Category"><span style="font-family:arial;color:indigo;"><b>Category</b></span></a></li> 
     </ul>
      <a class="navbar-brand"><span style="font-family:arial;color:indigo;margin-left:300px;">Welcome Barath</span></a>
   </div>
   </div>
 </nav>
   <c:url var="addAction" value="addcategory" ></c:url>
-
+<div class="Margin">
 <form:form action="${addAction}" modelAttribute="category" id="btn-add">
-   			<h3>
+   			<%-- <h3>
                     <c:if test="${category.id==0}">Add New Item</c:if>
 	            	<c:if test="${!empty category.id}">
 		      		Update Item for Id: <c:out value="${category.id}"/>
 		      		<form:hidden path="id"/></c:if>
-         </h3>
+         </h3> --%>
 	  <table>
 	  
 	  <tr>  <c:if test="${category.id!=0}">
 	  <td> Id:</td> <td><form:input  path="id"/></td> 
 	   </c:if>
-	    <tr> <td> Name:</td> <td><form:input  path="name"/></td> 
-	    <tr> <td>Description:</td> <td><form:input path="description"/> </td> 
+	   
+	    <div class="col-xs-8 col-sm-8  col-md-6 col-sm-offset-2 col-md-offset-3">
+      <label class="col-md-4 form-group"  for="name"><span style="margin-left:150px;"></span>Name</label>
+      <div class="col-md-4" style="margin-left:70px">
+        <form:input type="text" placeholder="category name" class="form-control name" path="name"/>
+      </div>
+    </div>
+	    <div class="col-xs-8 col-sm-8  col-md-6 col-sm-offset-2 col-md-offset-3">
+      <label class="col-md-4 form-group"  for="name"><span style="margin-left:150px;"></span>Description</label>
+      <div class="col-md-4" style="margin-left:70px">
+        <form:input type="text" placeholder="category Description" class="form-control name" path="description"/>
+      </div>
+    </div>
 	   <%--  <tr> <td>Price: </td> <td><form:input path="price"/></td>  --%>
 		
-  
-	    <tr> <td colspan="2">
+  </tr>
+              <div class="col-xs-8 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset=3">
+	             <div class="col-md-4">
+	              <div class="AddBtn">
     	  	      <c:if test="${category.id==0}">
-			      <input type="submit" value="Add" id="btn-add"> 
+			      <input type="submit" class="btn btn-success" value="Add" id="btn-add"> 
 	         </c:if>
+	         </div>
+	         <div class="UpBtn">
 	         <c:if test="${category.id!=0}">
-			      <input type="submit" value="Update" id="btn-update"> 
+			      <input type="submit" class="btn btn-success" value="Update" id="btn-update"> 
 	         </c:if>
+	         </div>
+	         </div>
+	         </div>
 		</td> 
 		<tr> <td colspan="2" class="success-msg">
 		   <c:out value="${msg}"/>
 		</td> 
 	  </table>
-	  
+	  </div>
 	  <div class="container">
-    <div class="row col-md-6 col-md-offset-2 custyle">
-    <table class="table table-striped custab">
-    <thead>
+    <div class="Table">
+    <table class="col-md-4 table custab">
+    <thead bgcolor="skyblue">
         <tr>
             <th>ID</th>
             <th>Name</th>
             <th>Description</th>
             <th class="text-center">Action</th>
         </tr>
+        </thead>
         <c:forEach var="obj" items="${allData}">
     		<tr>
 		                 <td> <c:out value="${obj.id}"/> </td>
@@ -121,10 +152,10 @@ padding-left:15px;
 				 		 <td> <c:out value="${obj.description}"/> </td>
 		
 				 <td class="text-center">
-				 <a class='btn btn-info btn-xs' href="ItemByproduct/${obj.id}">
-				 <span class="glyphicon glyphicon-edit"></span> Edit</a>
+				 <a class='btn btn-info btn-xs' href="ItemBycategory/${obj.id}">
+				 <span></span> Edit</a>
 				 <a href="deleteproduct/${obj.id}" class="btn btn-danger btn-xs">
-				 <span class="glyphicon glyphicon-remove"></span>Delete</a></td>
+				 <span class="glyphicon glyphicon-remove"></span></a></td>
 		      </tr>
 	      </c:forEach>
     
